@@ -303,7 +303,7 @@ h5 {
   margin: 0;
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-bold);
-  color: var(--heading-color);
+  color: var(--color-primary);
 }
 
 h1, .heading-1 {
