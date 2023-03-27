@@ -3334,6 +3334,8 @@ div[data-type="core/button"] div[data-block] {
 
 .site-header__logo {
   font-size: 2rem;
+  width: 200px;
+  height: 70px;
   margin: 0;
 }
 

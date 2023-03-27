@@ -1,6 +1,6 @@
 <header class="site-header">
 	<div class="site-header__inner">
-		<h1 class="site-header__logo"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+		<h1 class="site-header__logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.png" alt="The Fix logo" /></a></h1>
 		<button class="site-header__menu-btn hamburger" data-toggle="#mobile-menu" data-toggle-class="is-active" data-toggle-body-class="nav-open" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
 			<span class="sr-only">Menu</span>
 			<span class="hamburger-box">
