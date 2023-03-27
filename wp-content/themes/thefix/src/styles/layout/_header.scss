@@ -34,6 +34,10 @@
 	margin-left: 1rem;
 }
 
+.site-header__nav li a {
+	color: var(--color-text-base);
+}
+
 .site-header__menu-btn {
 	background: black;
 	color: white;
