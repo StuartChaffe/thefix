@@ -1,6 +1,7 @@
 .site-header {
 	display: flex;
 	justify-content: space-between;
+	z-index: 999;
 }
 
 .site-header__inner {
@@ -18,10 +19,10 @@
 }
 
 .site-header__nav {
-	display: none;
+	display: block;
 
-	@include mq(medium) {
-		display: block;
+	@media only screen and (max-width: 800px) {
+		display: none;
 	}
 }
 
@@ -38,7 +39,18 @@
 	color: white;
 	border: 0;
 
-	@include mq(medium) {
+	@media only screen and (min-width: 800px) {
+		display: none;
+	}
+}
+.site-header__menu-btn {
+    position: relative;
+	background: white;
+	color: white;
+	border: 0;
+	display: block;
+
+	@media only screen and (min-width: 799px) {
 		display: none;
 	}
 }
