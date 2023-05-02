@@ -47,7 +47,51 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 
 // debugging
 @if $debug == true {
-    * {
-        box-shadow: inset 0 0 0 1px red;
-    }
+	* {
+		box-shadow: inset 0 0 0 1px red;
+	}
+}
+
+// Show and hide
+
+.hide {
+	display: none;
+}
+.hidemobile {
+	@include mq($until: medium) {
+		display: none !important;
+	}
+}
+
+.hidedesktop {
+	@include mq(medium) {
+		display: none !important;
+	}
+}
+
+.bkg {
+	&--white {
+		background-color: white;
+	}
+	&--grey {
+		background-color: var(--color-tertiary);
+	}
+	&--dark-grey {
+		background-color: var(--color-secondary);
+	}
+	&--purple {
+		background-color: var(--color-primary);
+	}
+}
+
+.txt {
+	&--white {
+		color: white;
+	}
+	&--grey {
+		color: var(--color-grey) !important;
+	}
+	&--black {
+		color: black;
+	}
 }
