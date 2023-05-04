@@ -8,6 +8,10 @@
 	border-radius: var(--border-radius);
 	padding: var(--spacing-s) var(--spacing-l);
 	margin-bottom: var(--spacing-xs);
+
+	h1 {
+		margin-bottom: var(--spacing);
+	}
 	
 	&__hole {
 		position: absolute;

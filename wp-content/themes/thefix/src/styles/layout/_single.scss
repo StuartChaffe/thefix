@@ -1,0 +1,10 @@
+.single {
+	article {
+		.card {
+			padding-bottom: var(--spacing-l);
+			&__date {
+				margin-top: var(--spacing-s);
+			}
+		}
+	}
+}

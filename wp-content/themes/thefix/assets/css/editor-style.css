@@ -507,6 +507,13 @@ div[data-type="core/button"] div[data-block] {
   max-width: var(--container);
 }
 
+.single article .card {
+  padding-bottom: var(--spacing-l);
+}
+.single article .card__date {
+  margin-top: var(--spacing-s);
+}
+
 .content > * {
   max-width: var(--content-width);
   margin-right: auto;

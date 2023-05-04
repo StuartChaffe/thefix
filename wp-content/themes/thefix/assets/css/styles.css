@@ -3280,6 +3280,9 @@ div[data-type="core/button"] div[data-block] {
   padding: var(--spacing-s) var(--spacing-l);
   margin-bottom: var(--spacing-xs);
 }
+.card h1 {
+  margin-bottom: var(--spacing);
+}
 .card__hole {
   position: absolute;
   width: 30px;
@@ -3614,6 +3617,13 @@ body.nav-open {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.single article .card {
+  padding-bottom: var(--spacing-l);
+}
+.single article .card__date {
+  margin-top: var(--spacing-s);
 }
 
 .accordion {
