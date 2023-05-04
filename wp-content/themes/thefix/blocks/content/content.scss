@@ -1,0 +1,21 @@
+.content-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: var(--spacing-s);
+	border-radius: var(--border-radius);
+	@include mq(medium) {
+		flex-direction: column;
+	}
+
+	&--full {
+		padding-top: var(--spacing);
+		padding-bottom: var(--spacing);
+		margin: 0 1rem 1rem 1rem;
+	}
+
+	&__inner {
+		padding: var(--spacing) var(--spacing-l);
+		border-radius: var(--border-radius);
+	}
+}

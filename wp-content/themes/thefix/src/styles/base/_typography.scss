@@ -1,6 +1,9 @@
 p {
-	margin-top: var(--spacing-l);
-	margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: var(--spacing-s);
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 p.lead {

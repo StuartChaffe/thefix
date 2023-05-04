@@ -1,0 +1,13 @@
+{
+    "name": "acf/video",
+    "title": "Video",
+    "description": "A video block (Wistia)",
+    "category": "thefix",
+    "icon": "video-alt3",
+    "keywords": ["video"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "video.php"
+    },
+    "align": "full"
+}

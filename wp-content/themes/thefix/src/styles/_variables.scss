@@ -12,22 +12,13 @@
 	--body-family: 'Heebo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--display-family: 'TheFix', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-	--font-size: calc(1.1rem + 0.15vw);
-	--font-size-lead: calc(1.2rem + 0.1vw);
-	--font-size-small: calc(0.9rem + 0.1vw);
-	--font-size-h1: calc(2rem + 0.2vw);
-	--font-size-h2: calc(1.8rem + 0.2vw);
-	--font-size-h3: calc(1.5rem + 0.2vw);
-	--font-size-h4: calc(1.3rem + 0.2vw);
-	--font-size-h5: calc(1.2rem + 0.2vw);
-
 	--font-weight-light: 100;
 	--font-weight-normal: 300;
 	--font-weight-bold: 700;
 	--font-weight-heavy: var(--font-weight-bold);
 
 	--line-height: 1.5;
-	--line-height-headings: 1.2;
+	--line-height-headings: 1.1;
 
 	--color-grey-dark: #6a6a6a;
 	--color-grey: #ddd;
@@ -54,20 +45,30 @@
 
 	--border-radius: 16px;
 
-	--spacing-xxl: 3em;
-	--spacing-xl: 2em;
-	--spacing-l: 1.5em;
-	--spacing: 1em;
-	--spacing-s: 0.5em;
-	--spacing-xs: 0.25em;
+	--spacing-xxl: 160px;
+	--spacing-xl: 128px;
+	--spacing-l: 96px;
+	--spacing: 64px;
+	--spacing-s: 32px;
+	--spacing-xs: 16px;
 
-	--container-width: 75rem;
-	--container-width-l: 100rem;
-	--content-width: 50rem;
+	--container: 924px;
+	--container-l: 1430px;
+	--content-width: var(--container);
+	--container-global: 1430px;
+
+	--font-size: calc(1.1rem + 0.15vw);
+	--font-size-lead: calc(1.2rem + 0.1vw);
+	--font-size-small: calc(0.9rem + 0.1vw);
+	--font-size-h1: calc(2rem + 0.2vw);
+	--font-size-h2: calc(1.8rem + 0.2vw);
+	--font-size-h3: calc(1.5rem + 0.2vw);
+	--font-size-h4: calc(1.3rem + 0.2vw);
+	--font-size-h5: calc(1.2rem + 0.2vw);
 
 	@include mq(large) {
-		--font-size-h1: calc(2.8rem + 0.2vw);
-		--font-size-h2: calc(2.8rem + 0.2vw);
+		--font-size-h1: calc(2.5rem + 0.2vw);
+		--font-size-h2: calc(2.5rem + 0.2vw);
 		--font-size-h3: calc(2rem + 0.2vw);
 		--font-size-h4: calc(1.4rem + 0.2vw);
 		--font-size-h5: calc(1.2rem + 0.2vw);

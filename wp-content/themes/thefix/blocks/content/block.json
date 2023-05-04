@@ -1,0 +1,13 @@
+{
+	"name": "acf/content",
+	"title": "Content block",
+	"description": "Basic content",
+	"category": "thefix",
+	"icon": "media-text",
+	"keywords": ["content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "content.php"
+	},
+	"align": "full"
+}
