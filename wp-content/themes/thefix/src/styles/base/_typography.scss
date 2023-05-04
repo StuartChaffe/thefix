@@ -8,6 +8,12 @@ p {
 
 p.lead {
 	font-size: var(--font-size-lead);
+	line-height: var(--line-height-headings);
+}
+
+p.small,
+.small p {
+	font-size: var(--font-size-small);
 }
 
 ul,

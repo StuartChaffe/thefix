@@ -1,0 +1,41 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	max-width: none;
+	background-color: white;
+	position: relative;
+	border-radius: var(--border-radius);
+	padding: var(--spacing-s) var(--spacing-l);
+	margin-bottom: var(--spacing-xs);
+	
+	&__hole {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: var(--spacing-xs);
+		top: var(--spacing-xs);
+		border-radius: 30px;
+	}
+	&__date {
+		margin-bottom: var(--spacing-xs);
+		@extend .small;
+	}
+	&__title {
+		font-family: var(--display-family);
+	}
+	&__excerpt {
+		margin-top: var(--spacing-s);
+		@extend .small;
+	}
+	.btn {
+		margin-top: var(--spacing-xs);
+	}
+
+	&:hover {
+		text-decoration: none;
+		.btn {
+			background-color: var(--color-secondary);
+		}
+	}
+}

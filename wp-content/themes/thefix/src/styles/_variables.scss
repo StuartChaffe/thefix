@@ -14,13 +14,13 @@
 
 	--font-weight-light: 100;
 	--font-weight-normal: 300;
-	--font-weight-bold: 700;
+	--font-weight-bold: 400;
 	--font-weight-heavy: var(--font-weight-bold);
 
 	--line-height: 1.5;
 	--line-height-headings: 1.1;
 
-	--color-grey-dark: #6a6a6a;
+	--color-grey-dark: #000;
 	--color-grey: #ddd;
 	--color-grey-light: #efefef;
 
@@ -57,7 +57,7 @@
 	--content-width: var(--container);
 	--container-global: 1430px;
 
-	--font-size: calc(1.1rem + 0.15vw);
+	--font-size: calc(1rem + 0.15vw);
 	--font-size-lead: calc(1.2rem + 0.1vw);
 	--font-size-small: calc(0.9rem + 0.1vw);
 	--font-size-h1: calc(2rem + 0.2vw);
