@@ -12,9 +12,12 @@
 
 .container {
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	width: 100%;
 	max-width: var(--container);
+	@include mq(medium) {
+		padding: 0 1rem;
+	}
 }
 .container--large {
 	margin: 0 auto;
@@ -35,22 +38,31 @@
 .wp-block-heading,
 .global-container > p {
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	max-width: var(--container);
+	@include mq(medium) {
+		padding: 0 1rem;
+	}
 }
 
 .wp-block-image {
 	+ .wp-block-heading,
 	+ .news__featured,
 	+ p {
-		margin-top: var(--spacing);
+		margin-top: var(--spacing-s);
+		@include mq(medium) {
+			margin-top: var(--spacing);
+		}
 	}
 }
 .wp-block-heading {
 	+ .wp-block-image,
 	+ .news__featured,
 	+ p {
-		margin-top: var(--spacing);
+		margin-top: var(--spacing-s);
+		@include mq(medium) {
+			margin-top: var(--spacing);
+		}
 	}
 }
 
@@ -58,6 +70,9 @@
 	+ .wp-block-image,
 	+ .wp-block-heading,
 	+ .news__featured {
-		margin-top: var(--spacing);
+		margin-top: var(--spacing-s);
+		@include mq(medium) {
+			margin-top: var(--spacing);
+		}
 	}
 }

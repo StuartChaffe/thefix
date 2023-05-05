@@ -1,3 +1,6 @@
 .video {
-	margin-bottom: var(--spacing);
+	margin-bottom: var(--spacing-s);
+	@include mq(medium) {
+		margin-top: var(--spacing);
+	}
 }
