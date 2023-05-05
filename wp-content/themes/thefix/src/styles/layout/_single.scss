@@ -1,7 +1,9 @@
 .single {
 	article {
+		padding-bottom: var(--spacing-xl);
 		.card {
 			padding-bottom: var(--spacing-l);
+			margin-bottom: var(--spacing);
 			&__date {
 				margin-top: var(--spacing-s);
 			}

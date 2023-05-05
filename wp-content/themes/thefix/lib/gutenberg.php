@@ -13,6 +13,11 @@ function origin_gutenberg_setup() {
 
 	add_theme_support( 'editor-color-palette', array(
 		array(
+			'name'  => __( 'Primary', 'origin-colors' ),
+			'slug'  => 'primary',
+			'color'	=> '#A744FC',
+		),
+		array(
 			'name'  => __( 'White', 'origin-colors' ),
 			'slug'  => 'white',
 			'color'	=> '#fff',
@@ -21,26 +26,6 @@ function origin_gutenberg_setup() {
 			'name'  => __( 'Black', 'origin-colors' ),
 			'slug'  => 'black',
 			'color'	=> '#000',
-		),
-		array(
-			'name'  => __( 'Primary', 'origin-colors' ),
-			'slug'  => 'primary',
-			'color'	=> '#59BACC',
-		),
-		array(
-			'name'  => __( 'Secondary', 'origin-colors' ),
-			'slug'  => 'secondary',
-			'color' => '#58AD69',
-		),
-		array(
-			'name'  => __( 'Tertiary', 'origin-colors' ),
-			'slug'  => 'tertiary',
-			'color' => '#FFBC49',
-		),
-		array(
-			'name'  => __( 'Quaternary', 'origin-colors' ),
-			'slug'  => 'quaternary',
-			'color' => '#E2574C',
 		),
 	) );
 }

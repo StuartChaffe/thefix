@@ -4,7 +4,7 @@
 	border-top-left-radius: var(--border-radius);
 	border-top-right-radius: var(--border-radius);
 	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
+	padding-bottom: var(--spacing-xl);
 	@include mq(medium) {
 	}
 	@include mq(large) {

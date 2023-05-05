@@ -84,8 +84,23 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 	&--purple {
 		background-color: var(--color-primary);
-		.site-header__nav li a {
-			color: white;
+		.site-header__nav li {
+			&:last-of-type {
+				a {
+					background-color: white;
+					color: var(--color-primary);
+					padding: 0.1rem 0.4rem;
+					border-radius: 8px;
+					&:hover {
+						background-color: var(--color-secondary);
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+			a {
+				color: white;
+			}
 		}
 	}
 }
@@ -108,6 +123,9 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	&--purple {
 		color: var(--color-primary);
 	}
+}
+.has-primary-color {
+	color: var(--color-primary);
 }
 .bkg {
 	&--white {

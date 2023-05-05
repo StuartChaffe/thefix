@@ -20,7 +20,7 @@
 <?php
 	$bkg = get_field('bkg_colour');
 ?>
-<div class="global-container <?php echo $bkg; ?><?php if ( 'post' == get_post_type() ) { ?> bkg--purple<?php } ?>">
+<div class="global-container <?php echo $bkg; ?><?php if ( 'post' == get_post_type() ) { ?> body--purple<?php } ?>">
 
 <?php get_template_part('partials/global', 'alert'); ?>
 <?php get_template_part('partials/site', 'header'); ?>

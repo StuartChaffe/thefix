@@ -43,6 +43,7 @@ function allowed_block_types( $allowed_blocks ) {
 		// 'acf/resources',
 		'acf/video',
 
+		'core/columns',
 		'core/paragraph',
 		'core/heading',
 		'core/buttons',

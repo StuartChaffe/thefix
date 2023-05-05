@@ -2,20 +2,54 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: var(--spacing-s);
+	margin-bottom: 1rem;
 	border-radius: var(--border-radius);
 	@include mq(medium) {
 		flex-direction: column;
 	}
 
+	.wp-block-image,
+	h2, h3, h4 {
+		margin-bottom: var(--spacing-s);
+	}
+
 	&--full {
 		padding-top: var(--spacing);
 		padding-bottom: var(--spacing);
-		margin: 0 1rem 1rem 1rem;
+		margin: 0 2rem 1rem 2rem;
+		@include mq(medium) {
+			margin: 0 1rem 1rem 1rem;
+		}
+	}
+
+	&--pad {
+		padding: var(--spacing-xs) var(--spacing-s);
+		@include mq(medium) {
+			padding: var(--spacing) var(--spacing-l);
+		}
 	}
 
 	&__inner {
-		padding: var(--spacing) var(--spacing-l);
 		border-radius: var(--border-radius);
+
+		p + .wp-block-heading,
+		p + h1,
+		p + h2,
+		p + h3,
+		p + h4 {
+			margin-top: var(--spacing-xs);
+		}
+
+		ul {
+			margin-left: 1rem;
+			list-style-type: disc;
+			li {
+				margin-bottom: 1rem;
+			}
+		}
 	}
+}
+
+.body--white .bkg--white {
+	// padding: 0;
 }

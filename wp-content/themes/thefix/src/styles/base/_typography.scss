@@ -1,6 +1,6 @@
 p {
 	margin-top: 0;
-	margin-bottom: var(--spacing-s);
+	margin-bottom: var(--spacing-xs);
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -14,6 +14,11 @@ p.lead {
 p.small,
 .small p {
 	font-size: var(--font-size-small);
+}
+
+
+strong {
+	font-weight: var(--font-weight-bold);
 }
 
 ul,
@@ -60,7 +65,7 @@ h5 {
 	line-height: var(--line-height-headings);
 	font-weight: var(--font-weight-normal);
 	font-family: var(--display-family);
-	color: var(--color-primary);
+	// color: var(--color-primary);
 }
 
 h1, .heading-1 { font-size: var(--font-size-h1); }

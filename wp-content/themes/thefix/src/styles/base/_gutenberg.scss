@@ -12,6 +12,12 @@
 .editor-styles-wrapper .wp-block {
     max-width: var(--container-global);
 }
+.wp-block-post-content {
+	p {
+		max-width: var(--container);
+		margin: 0 auto var(--spacing-xs) auto;
+	}
+}
 
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
@@ -66,6 +72,10 @@ div[data-type="core/button"] div[data-block] {
 	max-width: 100%;
 }
 
+.wp-block-spacer {
+	border: 1px dashed var(--color-grey);
+}
+
 .edit-post-visual-editor__post-title-wrapper {
 	border-bottom: 1px solid var(--color-grey);
 	max-width: 900px;
@@ -83,6 +93,10 @@ div[data-type="core/button"] div[data-block] {
 
 .btn {
 	font-weight: 400 !important;
+}
+
+.video {
+	background-color: var(--color-primary);
 }
 
 .wp-block-acf-news {

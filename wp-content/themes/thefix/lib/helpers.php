@@ -4,10 +4,10 @@
  * Display Post Blocks
  */
 
-function origin_display_post_blocks() {
-	global $post;
-	origin_pp( esc_html( $post->post_content ) );
-}
+// function origin_display_post_blocks() {
+// 	global $post;
+// 	origin_pp( esc_html( $post->post_content ) );
+// }
 // add_action( 'wp_footer', 'origin_display_post_blocks' );
 
 
