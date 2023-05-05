@@ -860,6 +860,9 @@ div[data-type="core/button"] div[data-block] {
     flex-direction: column;
   }
 }
+.content-block a {
+  text-decoration: underline;
+}
 .content-block .wp-block-image,
 .content-block h2, .content-block h3, .content-block h4 {
   margin-bottom: var(--spacing-s);

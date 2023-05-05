@@ -1,0 +1,13 @@
+{
+    "name": "acf/cta",
+    "title": "CTA",
+    "description": "A call to action block",
+    "category": "thefix",
+    "icon": "megaphone",
+    "keywords": ["cta"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "cta.php"
+    },
+    "align": "full"
+}
