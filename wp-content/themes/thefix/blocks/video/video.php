@@ -1,6 +1,6 @@
 <?php
 $video = get_field('video');
 ?>
-<div class="container">
+<div class="container video">
 	<?php echo $video; ?>
 </div>

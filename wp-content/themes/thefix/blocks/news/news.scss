@@ -19,11 +19,17 @@
 	}
 
 	.card {
+		&:hover {
+			text-decoration: none;
+			.btn {
+				background-color: var(--color-secondary);
+			}
+		}
 	}
 
 
 	&__featured {
-		padding-top: var(--spacing-);
+		padding-top: var(--spacing);
 		padding-bottom: var(--spacing-xl);
 
 		h1 {

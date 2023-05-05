@@ -11,10 +11,10 @@
 	$wp_query = $featured;
 ?>
 <?php if ($featured->have_posts()) { ?>
-	<div class="news__featured container">
+	<div class="news__featured container txt--white">
 		<h1>Latest Blog Post</h1>
 		<?php while($featured->have_posts()) : $featured->the_post(); ?>
-		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card bkg--white">
+		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card bkg--white txt--black">
 			<span class="card__hole bkg--purple">&nbsp;</span>
 
 		 	<div class="card__date"><p><?php the_date('d.m.Y'); ?></p></div>
@@ -38,7 +38,7 @@
 	));
 	$counter = 1;
 ?>
-<section class="news <?php echo $bkg; ?>">
+<section class="news <?php echo $bkg; ?> txt--black">
 <?php if($content) { ?><div class="news__content"><?php echo $content; ?></div><?php } ?>
 <?php if ($posts->have_posts()) { ?>
 	<div class="container">

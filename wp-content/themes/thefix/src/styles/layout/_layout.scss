@@ -32,8 +32,32 @@
 }
 
 .wp-block-image,
-.wp-block-heading {
+.wp-block-heading,
+.global-container > p {
 	margin: 0 auto;
 	padding: 0 1rem;
 	max-width: var(--container);
+}
+
+.wp-block-image {
+	+ .wp-block-heading,
+	+ .news__featured,
+	+ p {
+		margin-top: var(--spacing);
+	}
+}
+.wp-block-heading {
+	+ .wp-block-image,
+	+ .news__featured,
+	+ p {
+		margin-top: var(--spacing);
+	}
+}
+
+.global-container > p {
+	+ .wp-block-image,
+	+ .wp-block-heading,
+	+ .news__featured {
+		margin-top: var(--spacing);
+	}
 }

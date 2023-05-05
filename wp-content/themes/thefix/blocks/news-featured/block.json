@@ -1,0 +1,13 @@
+{
+	"name": "acf/news-featured",
+	"title": "Featured news",
+	"description": "Display featured news article",
+	"category": "thefix",
+	"icon": "media-text",
+	"keywords": ["news"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "news-featured.php"
+	},
+	"align": "full"
+}

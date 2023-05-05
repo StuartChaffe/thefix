@@ -1,0 +1,25 @@
+.news {
+	&__featured {
+		
+		padding-top: var(--spacing);
+		padding-bottom: var(--spacing-xl);
+
+		h1 {
+			text-align: center;
+			margin-bottom: var(--spacing);
+		}
+		a.card {
+			padding: var(--spacing) var(--spacing-l);
+			&:hover {
+				text-decoration: none;
+				.btn {
+					background-color: var(--color-secondary);
+				}
+			}
+		}
+		.card .btn {
+			margin-top: var(--spacing-s);
+		}
+	}
+}
+

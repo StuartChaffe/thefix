@@ -34,7 +34,7 @@ function allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		// 'acf/form',
 		'acf/news',
-		// 'acf/featured-news',
+		'acf/news-featured',
 		// 'acf/featured-programmes',
 		// 'acf/featured-events',
 		// 'acf/featured-resources',

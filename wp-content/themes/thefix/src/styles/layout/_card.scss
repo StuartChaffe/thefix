@@ -9,7 +9,6 @@
 	padding: var(--spacing-s) var(--spacing-l);
 	margin-bottom: var(--spacing-xs);
 	border: 0;
-	@extend .txt--black;
 
 	h1 {
 		margin-bottom: var(--spacing);
@@ -36,12 +35,5 @@
 	}
 	.btn {
 		margin-top: var(--spacing-xs);
-	}
-
-	&:hover {
-		text-decoration: none;
-		.btn {
-			background-color: var(--color-secondary);
-		}
 	}
 }
