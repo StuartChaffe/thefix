@@ -8,6 +8,8 @@
 	border-radius: var(--border-radius);
 	padding: var(--spacing-s) var(--spacing-l);
 	margin-bottom: var(--spacing-xs);
+	border: 0;
+	@extend .txt--black;
 
 	h1 {
 		margin-bottom: var(--spacing);

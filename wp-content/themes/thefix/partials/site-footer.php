@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer bkg--dark-grey">
 	<div class="site-footer__inner">
 		<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 

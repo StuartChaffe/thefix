@@ -272,8 +272,10 @@ p.lead {
   line-height: var(--line-height-headings);
 }
 
-p.small,
-.small p {
+p.small, p.card__excerpt, p.card__date,
+.small p,
+.card__excerpt p,
+.card__date p {
   font-size: var(--font-size-small);
 }
 
@@ -411,6 +413,10 @@ pre {
   background-color: var(--color-quaternary) !important;
 }
 
+.editor-styles-wrapper .wp-block {
+  max-width: var(--container-global);
+}
+
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
   pointer-events: none !important;
@@ -426,9 +432,10 @@ pre {
   max-width: var(--content-width);
   /* Post title styling */
 }
+
 /* Main column width */
 .wp-block {
-  max-width: var(--content-width);
+  max-width: var(--container-global);
   /* Wide column width */
 }
 .wp-block[data-align=wide], .wp-block[data-align=full] {
@@ -473,6 +480,14 @@ div[data-type="core/button"] div[data-block] {
   font-weight: 400 !important;
 }
 
+.wp-block-acf-news {
+  background: var(--color-primary);
+}
+
+.card {
+  max-width: none;
+}
+
 .global-container {
   display: flex;
   flex-direction: column;
@@ -505,6 +520,48 @@ div[data-type="core/button"] div[data-block] {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: var(--container);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  max-width: none;
+  background-color: white;
+  position: relative;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-s) var(--spacing-l);
+  margin-bottom: var(--spacing-xs);
+  border: 0;
+}
+.card h1 {
+  margin-bottom: var(--spacing);
+}
+.card__hole {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: var(--spacing-xs);
+  top: var(--spacing-xs);
+  border-radius: 30px;
+}
+.card__date {
+  margin-bottom: var(--spacing-xs);
+}
+.card__title {
+  font-family: var(--display-family);
+}
+.card__excerpt {
+  margin-top: var(--spacing-s);
+}
+.card .btn {
+  margin-top: var(--spacing-xs);
+}
+.card:hover {
+  text-decoration: none;
+}
+.card:hover .btn {
+  background-color: var(--color-secondary);
 }
 
 .single article .card {
@@ -610,7 +667,7 @@ div[data-type="core/button"] div[data-block] {
   padding: 0.1rem 0.6rem;
   border: none;
   color: var(--color-text-dark);
-  font-weight: var(--font-weight-normal) !important;
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size);
   text-align: center;
   cursor: pointer;
@@ -762,12 +819,15 @@ div[data-type="core/button"] div[data-block] {
   max-width: var(--container);
 }
 .news__featured {
-  padding-top: var(--spacing-s);
+  padding-top: var(--spacing-);
   padding-bottom: var(--spacing-xl);
 }
 .news__featured h1 {
   text-align: center;
   margin-bottom: var(--spacing);
+}
+.news__featured .card {
+  padding: var(--spacing) var(--spacing-l);
 }
 .news__featured .card .btn {
   margin-top: var(--spacing-s);
@@ -986,19 +1046,32 @@ img.aligncenter {
   }
 }
 
-.txt--white, .bkg--purple, .bkg--dark-grey {
+.body--white {
+  background-color: white;
+}
+.body--grey {
+  background-color: var(--color-tertiary);
+}
+.body--dark-grey {
+  background-color: var(--color-secondary);
+}
+.body--purple {
+  background-color: var(--color-primary);
+}
+
+.txt--white {
   color: white;
 }
-.txt--white h1, .bkg--purple h1, .bkg--dark-grey h1, .txt--white h2, .bkg--purple h2, .bkg--dark-grey h2, .txt--white h3, .bkg--purple h3, .bkg--dark-grey h3, .txt--white h4, .bkg--purple h4, .bkg--dark-grey h4, .txt--white h5, .bkg--purple h5, .bkg--dark-grey h5, .txt--white h6, .bkg--purple h6, .bkg--dark-grey h6, .txt--white p, .bkg--purple p, .bkg--dark-grey p {
+.txt--white h1, .txt--white h2, .txt--white h3, .txt--white h4, .txt--white h5, .txt--white h6, .txt--white p {
   color: white;
 }
 .txt--grey {
   color: var(--color-grey) !important;
 }
-.txt--black, .bkg--grey, .bkg--white, .news__content {
+.txt--black, .bkg--white, .card, .news__content {
   color: black;
 }
-.txt--black h1, .bkg--grey h1, .bkg--white h1, .news__content h1, .txt--black h2, .bkg--grey h2, .bkg--white h2, .news__content h2, .txt--black h3, .bkg--grey h3, .bkg--white h3, .news__content h3, .txt--black h4, .bkg--grey h4, .bkg--white h4, .news__content h4, .txt--black h5, .bkg--grey h5, .bkg--white h5, .news__content h5, .txt--black h6, .bkg--grey h6, .bkg--white h6, .news__content h6, .txt--black p, .bkg--grey p, .bkg--white p, .news__content p {
+.txt--black h1, .bkg--white h1, .card h1, .news__content h1, .txt--black h2, .bkg--white h2, .card h2, .news__content h2, .txt--black h3, .bkg--white h3, .card h3, .news__content h3, .txt--black h4, .bkg--white h4, .card h4, .news__content h4, .txt--black h5, .bkg--white h5, .card h5, .news__content h5, .txt--black h6, .bkg--white h6, .card h6, .news__content h6, .txt--black p, .bkg--white p, .card p, .news__content p {
   color: black;
 }
 .txt--purple {
@@ -1014,8 +1087,14 @@ img.aligncenter {
 .bkg--dark-grey {
   background-color: var(--color-secondary);
 }
+.bkg--dark-grey h1, .bkg--dark-grey h2, .bkg--dark-grey h3, .bkg--dark-grey h4, .bkg--dark-grey h5, .bkg--dark-grey h6, .bkg--dark-grey p {
+  color: white;
+}
 .bkg--purple {
   background-color: var(--color-primary);
+}
+.bkg--purple h1, .bkg--purple h2, .bkg--purple h3, .bkg--purple h4, .bkg--purple h5, .bkg--purple h6, .bkg--purple p {
+  color: white;
 }
 .bkg--purple .site-header__nav li a {
   color: white;

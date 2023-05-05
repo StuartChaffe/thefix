@@ -9,6 +9,10 @@
 	}
 }
 
+.editor-styles-wrapper .wp-block {
+    max-width: var(--container-global);
+}
+
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
 	pointer-events: none!important;
@@ -24,13 +28,13 @@
 	max-width: var(--content-width);
 
 	/* Post title styling */
-	.editor-post-title__input {
-	}
+	// .editor-post-title__input {
+	// }
 }
 
 /* Main column width */
 .wp-block {
-    max-width: var(--content-width);
+    max-width: var(--container-global);
 
 	/* Wide column width */
 	&[data-align="wide"],
@@ -79,4 +83,11 @@ div[data-type="core/button"] div[data-block] {
 
 .btn {
 	font-weight: 400 !important;
+}
+
+.wp-block-acf-news {
+    background: var(--color-primary);
+}
+.card {
+	max-width: none;
 }

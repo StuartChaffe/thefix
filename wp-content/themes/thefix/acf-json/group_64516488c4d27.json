@@ -17,10 +17,10 @@
                 "id": ""
             },
             "choices": {
-                "bkg--white": "White",
-                "bkg--grey": "Grey",
-                "bkg--dark-grey": "Dark grey",
-                "bkg--purple": "Purple"
+                "body--white": "White",
+                "body--grey": "Grey",
+                "body--dark-grey": "Dark grey",
+                "body--purple": "Purple"
             },
             "default_value": false,
             "return_format": "value",
@@ -64,5 +64,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683056957
+    "modified": 1683285460
 }

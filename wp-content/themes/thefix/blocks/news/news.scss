@@ -23,12 +23,15 @@
 
 
 	&__featured {
-		padding-top: var(--spacing-s);
+		padding-top: var(--spacing-);
 		padding-bottom: var(--spacing-xl);
 
 		h1 {
 			text-align: center;
 			margin-bottom: var(--spacing);
+		}
+		.card {
+			padding: var(--spacing) var(--spacing-l);
 		}
 		.card .btn {
 			margin-top: var(--spacing-s);

@@ -17,7 +17,7 @@
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card bkg--white">
 			<span class="card__hole bkg--purple">&nbsp;</span>
 
-		 	<div class="card__date"><p><?php the_date(); ?></p></div>
+		 	<div class="card__date"><p><?php the_date('d.m.Y'); ?></p></div>
 			<div class="card__title"><h3><?php the_title(); ?></h3></div>
 			<?php if(has_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
 
@@ -47,7 +47,7 @@
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card">
 			<span class="card__hole <?php echo $bkg; ?>">&nbsp;</span>
 
-		 	<div class="card__date"><p><?php the_date(); ?></p></div>
+		 	<div class="card__date"><p><?php the_date('d.m.Y'); ?></p></div>
 			<div class="card__title"><p class="lead"><?php the_title(); ?></p></div>
 			<?php if(has_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
 

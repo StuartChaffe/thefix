@@ -69,6 +69,20 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 }
 
+.body {
+	&--white {
+		background-color: white;
+	}
+	&--grey {
+		background-color: var(--color-tertiary);
+	}
+	&--dark-grey {
+		background-color: var(--color-secondary);
+	}
+	&--purple {
+		background-color: var(--color-primary);
+	}
+}
 .txt {
 	&--white {
 		color: white;
@@ -96,15 +110,18 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 	&--grey {
 		background-color: var(--color-tertiary);
-		@extend .txt--black;
 	}
 	&--dark-grey {
 		background-color: var(--color-secondary);
-		@extend .txt--white;
+		h1, h2, h3, h4, h5, h6, p {
+			color: white;
+		}
 	}
 	&--purple {
 		background-color: var(--color-primary);
-		@extend .txt--white;
+		h1, h2, h3, h4, h5, h6, p {
+			color: white;
+		}
 		.site-header__nav li a {
 			color: white;
 		}
