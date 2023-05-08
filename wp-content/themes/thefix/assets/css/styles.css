@@ -3279,6 +3279,10 @@ input[type=button]:focus {
   margin-top: var(--spacing-xs);
 }
 
+.wp-block-image {
+  mix-blend-mode: multiply;
+}
+
 .global-container > p {
   width: 100%;
 }
