@@ -1,6 +1,13 @@
-.video {
-	// margin-bottom: var(--spacing-s);
-	// @include mq(medium) {
-	// 	margin-bottom: var(--spacing);
-	// }
+.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: var(--border-radius);
+	padding-top: var(--spacing);
+	padding-bottom: var(--spacing);
+	margin: 0 2rem 1rem 2rem;
+	@include mq(medium) {
+		flex-direction: column;
+		margin: 0 1rem 1rem 1rem;
+	}
 }

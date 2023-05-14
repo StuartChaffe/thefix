@@ -320,9 +320,7 @@ a:hover {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   margin: 0;
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-normal);
@@ -907,6 +905,22 @@ div[data-type="core/button"] div[data-block] {
   margin-bottom: 1rem;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+  margin: 0 2rem 1rem 2rem;
+}
+@media (min-width: 50em) {
+  .cta {
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+
 .news__featured {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
@@ -1135,19 +1149,51 @@ img.aligncenter {
   color: white;
 }
 
-.txt--white, .content-block.bkg--purple, .content-block.bkg--dark-grey {
+.txt--white, .content-block.bkg--purple,
+.cta.bkg--purple, .content-block.bkg--dark-grey,
+.cta.bkg--dark-grey {
   color: white;
 }
-.txt--white h1, .content-block.bkg--purple h1, .content-block.bkg--dark-grey h1, .txt--white h2, .content-block.bkg--purple h2, .content-block.bkg--dark-grey h2, .txt--white h3, .content-block.bkg--purple h3, .content-block.bkg--dark-grey h3, .txt--white h4, .content-block.bkg--purple h4, .content-block.bkg--dark-grey h4, .txt--white h5, .content-block.bkg--purple h5, .content-block.bkg--dark-grey h5, .txt--white h6, .content-block.bkg--purple h6, .content-block.bkg--dark-grey h6, .txt--white p, .content-block.bkg--purple p, .content-block.bkg--dark-grey p {
+.txt--white h1, .content-block.bkg--purple h1,
+.cta.bkg--purple h1, .content-block.bkg--dark-grey h1,
+.cta.bkg--dark-grey h1, .txt--white h2, .content-block.bkg--purple h2,
+.cta.bkg--purple h2, .content-block.bkg--dark-grey h2,
+.cta.bkg--dark-grey h2, .txt--white h3, .content-block.bkg--purple h3,
+.cta.bkg--purple h3, .content-block.bkg--dark-grey h3,
+.cta.bkg--dark-grey h3, .txt--white h4, .content-block.bkg--purple h4,
+.cta.bkg--purple h4, .content-block.bkg--dark-grey h4,
+.cta.bkg--dark-grey h4, .txt--white h5, .content-block.bkg--purple h5,
+.cta.bkg--purple h5, .content-block.bkg--dark-grey h5,
+.cta.bkg--dark-grey h5, .txt--white h6, .content-block.bkg--purple h6,
+.cta.bkg--purple h6, .content-block.bkg--dark-grey h6,
+.cta.bkg--dark-grey h6, .txt--white p, .content-block.bkg--purple p,
+.cta.bkg--purple p, .content-block.bkg--dark-grey p,
+.cta.bkg--dark-grey p {
   color: white;
 }
 .txt--grey {
   color: var(--color-grey) !important;
 }
-.txt--black, .content-block.bkg--grey, .content-block.bkg--white, .news__content {
+.txt--black, .content-block.bkg--grey,
+.cta.bkg--grey, .content-block.bkg--white,
+.cta.bkg--white, .news__content {
   color: black;
 }
-.txt--black h1, .content-block.bkg--grey h1, .content-block.bkg--white h1, .news__content h1, .txt--black h2, .content-block.bkg--grey h2, .content-block.bkg--white h2, .news__content h2, .txt--black h3, .content-block.bkg--grey h3, .content-block.bkg--white h3, .news__content h3, .txt--black h4, .content-block.bkg--grey h4, .content-block.bkg--white h4, .news__content h4, .txt--black h5, .content-block.bkg--grey h5, .content-block.bkg--white h5, .news__content h5, .txt--black h6, .content-block.bkg--grey h6, .content-block.bkg--white h6, .news__content h6, .txt--black p, .content-block.bkg--grey p, .content-block.bkg--white p, .news__content p {
+.txt--black h1, .content-block.bkg--grey h1,
+.cta.bkg--grey h1, .content-block.bkg--white h1,
+.cta.bkg--white h1, .news__content h1, .txt--black h2, .content-block.bkg--grey h2,
+.cta.bkg--grey h2, .content-block.bkg--white h2,
+.cta.bkg--white h2, .news__content h2, .txt--black h3, .content-block.bkg--grey h3,
+.cta.bkg--grey h3, .content-block.bkg--white h3,
+.cta.bkg--white h3, .news__content h3, .txt--black h4, .content-block.bkg--grey h4,
+.cta.bkg--grey h4, .content-block.bkg--white h4,
+.cta.bkg--white h4, .news__content h4, .txt--black h5, .content-block.bkg--grey h5,
+.cta.bkg--grey h5, .content-block.bkg--white h5,
+.cta.bkg--white h5, .news__content h5, .txt--black h6, .content-block.bkg--grey h6,
+.cta.bkg--grey h6, .content-block.bkg--white h6,
+.cta.bkg--white h6, .news__content h6, .txt--black p, .content-block.bkg--grey p,
+.cta.bkg--grey p, .content-block.bkg--white p,
+.cta.bkg--white p, .news__content p {
   color: black;
 }
 .txt--purple {

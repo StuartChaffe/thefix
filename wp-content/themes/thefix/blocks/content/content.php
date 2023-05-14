@@ -15,8 +15,8 @@
 	<div class="content-block__inner <?php echo $bkg; ?><?php if ( 'true' == $pad ) { ?> content-block--pad<?php } ?>">
 <?php } ?>
 
-<?php if($content) { ?><?php echo $content; ?><?php } ?>
-<?php echo '<InnerBlocks allowedBlocks="' . esc_attr( wp_json_encode( $allowed_blocks ) ) . '" />'; ?>
+	<?php if($content) { ?><?php echo $content; ?><?php } ?>
+	<?php echo '<InnerBlocks allowedBlocks="' . esc_attr( wp_json_encode( $allowed_blocks ) ) . '" />'; ?>
 
 	</div>
 </section>

@@ -141,7 +141,8 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 		background-color: var(--color-primary);
 	}
 }
-.content-block.bkg {
+.content-block.bkg,
+.cta.bkg {
 	&--white {
 		@extend .txt--black;
 	}
