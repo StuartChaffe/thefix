@@ -4,10 +4,31 @@
 	justify-content: space-between;
 	border-radius: var(--border-radius);
 	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
+	// padding-bottom: var(--spacing);
 	margin: 0 2rem 1rem 2rem;
 	@include mq(medium) {
 		flex-direction: column;
 		margin: 0 1rem 1rem 1rem;
+	}
+
+	&__form-outer {
+		width: 100%;
+		display: flex;
+	}
+	&__image,
+	&__form {
+		width: 50%;
+	}
+
+	.wp-block-image,
+	.wp-block-heading,
+	.wp-block-columns,
+	p {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.wp-block-image {
+		width: 50%;
 	}
 }
