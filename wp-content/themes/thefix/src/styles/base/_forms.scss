@@ -7,13 +7,28 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-	height: 38px;
-	padding: 6px 10px;
-	background-color: #fff;
-	border: 1px solid #D1D1D1;
-	border-radius: 4px;
+	background-color: var(--color-tertiary);
+	padding: 0.4rem 1rem;
+	border: 0;
+	border-radius: 8px;
 	box-shadow: none;
 	box-sizing: border-box;
+	font-size: var(--font-size-small);
+	width: 100%;
+}
+
+
+input[type=submit], input[type=reset], input[type=button] {
+	display: block;
+	padding: 0.4rem 0.6rem;
+	margin: 0.5em 0;
+	border-radius: 8px;
+	background: var(--color-primary);
+	color: #fff;
+	transition: all 0.2s linear;
+	border: 0;
+	font-size: var(--font-size-small);
+	width: 100%;
 }
 
 input[type="email"],
@@ -43,7 +58,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	border: 1px solid var(--color-grey-dark);
+	border: 0;
 	outline: 0;
 }
 
@@ -58,19 +73,6 @@ input[type="radio"] {
 	display: inline;
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-	display: block;
-	padding: 1em;
-	margin: .5em 0;
-	background: var(--color-primary);
-	color: #fff;
-	border-radius: var(--border-radius);
-	transition: (all 0.2s linear);
-	border: 0;
-}
-
 input[type="submit"].center,
 input[type="reset"].center,
 input[type="button"].center {
@@ -83,11 +85,17 @@ input[type="button"]:hover,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-	background: var(--color-grey);
+	background: white;
 	text-decoration: none;
-	color: #fff;
+	color: var(--color-text-base);
 }
 
  .required {
 	 color: #BF5D58;
+ }
+
+ .mc-field-group {
+	label {
+		display: none;
+	}
  }

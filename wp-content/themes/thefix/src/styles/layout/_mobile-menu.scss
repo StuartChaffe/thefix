@@ -19,14 +19,13 @@ body.nav-open {
 	}
 
 	.menu {
-		ul {
-			li {
-				a {
-					font-size: 22px;
-					display: block;
-					color: white;
-					padding: 0.5rem 0;
-				}
+		margin-left: 1rem;
+		li {
+			a {
+				font-size: 22px;
+				display: block;
+				color: var(--color-text-base);
+				padding: 0.5rem 0;
 			}
 		}
 	}

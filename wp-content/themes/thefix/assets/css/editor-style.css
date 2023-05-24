@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap);
 @charset "UTF-8";
 body:before {
+  display: none;
   background-color: #fcf8e3;
   border-bottom: 1px solid #fbeed5;
   border-left: 1px solid #fbeed5;
@@ -55,6 +56,7 @@ body:before {
   }
 }
 body:before {
+  display: none;
   background-color: #fcf8e3;
   border-bottom: 1px solid #fbeed5;
   border-left: 1px solid #fbeed5;
@@ -541,6 +543,7 @@ div[data-type="core/button"] div[data-block] {
   margin: 0 auto;
   padding: 0 2rem;
   max-width: var(--container);
+  width: 100%;
 }
 @media (min-width: 50em) {
   .wp-block-image,
@@ -623,6 +626,9 @@ div[data-type="core/button"] div[data-block] {
   max-width: var(--content-width);
   margin-right: auto;
   margin-left: auto;
+}
+.content h1 {
+  margin-bottom: var(--spacing-s);
 }
 .content h2,
 .content h3,
@@ -709,7 +715,7 @@ div[data-type="core/button"] div[data-block] {
   margin-right: 5px;
 }
 
-.btn {
+.btn, .button {
   display: inline-block;
   border-radius: 8px;
   padding: 0.1rem 0.6rem;
@@ -722,17 +728,17 @@ div[data-type="core/button"] div[data-block] {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .btn:focus, .button:hover, .button:focus {
   outline: 0;
   border-color: var(--color-secondary);
   background-color: var(--color-secondary);
   color: white;
   text-decoration: none;
 }
-.btn + .btn {
+.btn + .btn, .button + .btn {
   margin-left: 0.5rem;
 }
-.btn__group {
+.btn__group, .button__group {
   display: flex;
   flex-direction: row;
 }
@@ -906,11 +912,12 @@ div[data-type="core/button"] div[data-block] {
   flex-direction: column;
   justify-content: space-between;
   border-radius: var(--border-radius);
-  padding-top: var(--spacing);
+  padding-top: var(--spacing-s);
   margin: 0 2rem 1rem 2rem;
 }
 @media (min-width: 50em) {
   .cta {
+    padding-top: var(--spacing);
     flex-direction: column;
     margin: 0 1rem 1rem 1rem;
   }
@@ -918,9 +925,32 @@ div[data-type="core/button"] div[data-block] {
 .cta__form-outer {
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 50em) {
+  .cta__form-outer {
+    flex-direction: row;
+  }
+}
+.cta__image {
+  text-align: center;
+}
+.cta__image img {
+  margin: 0 auto;
+}
+.cta__form {
+  margin-top: var(--spacing);
+}
+.cta__form form {
+  margin-bottom: var(--spacing-s);
 }
 .cta__image, .cta__form {
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .cta__image, .cta__form {
+    width: 50%;
+  }
 }
 .cta .wp-block-image,
 .cta .wp-block-heading,

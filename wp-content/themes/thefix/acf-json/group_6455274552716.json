@@ -32,10 +32,10 @@
         },
         {
             "key": "field_6460f3e7c9cd6",
-            "label": "Form",
+            "label": "Form code",
             "name": "form",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -46,9 +46,9 @@
             },
             "default_value": "",
             "maxlength": "",
+            "rows": 4,
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": ""
         },
         {
             "key": "field_6460f3d8c9cd5",
@@ -114,5 +114,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684075515
+    "modified": 1684939389
 }

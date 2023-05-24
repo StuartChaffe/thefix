@@ -41,6 +41,7 @@
 	margin: 0 auto;
 	padding: 0 2rem;
 	max-width: var(--container);
+	width: 100%;
 	@include mq(medium) {
 		padding: 0 1rem;
 	}
