@@ -1,0 +1,13 @@
+{
+	"name": "acf/guests",
+	"title": "All guest speakers",
+	"description": "Display all guest speakers",
+	"category": "transatlantic",
+	"icon": "media-default",
+	"keywords": ["guest"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "guests.php"
+	},
+	"align": "full"
+}

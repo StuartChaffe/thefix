@@ -1,6 +1,6 @@
 {
     "key": "post_type_646e2a0883486",
-    "title": "Guests",
+    "title": "Special Guests",
     "menu_order": 0,
     "active": true,
     "post_type": "guest",
@@ -8,9 +8,9 @@
     "import_source": "",
     "import_date": "",
     "labels": {
-        "name": "Guests",
+        "name": "Special Guests",
         "singular_name": "Guest",
-        "menu_name": "Guests",
+        "menu_name": "Special Guests",
         "all_items": "All Guests",
         "edit_item": "Edit Guest",
         "view_item": "View Guest",
@@ -78,5 +78,5 @@
     "can_export": true,
     "delete_with_user": false,
     "register_meta_box_cb": "",
-    "modified": 1684941398
+    "modified": 1684942466
 }
