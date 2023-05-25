@@ -10,6 +10,10 @@ p.lead {
 	font-size: var(--font-size-lead);
 	line-height: var(--line-height-headings);
 }
+.has-large-font-size {
+	font-size: var(--font-size-h3);
+	line-height: var(--line-height-headings);
+}
 
 p.small,
 .small p {
@@ -18,7 +22,7 @@ p.small,
 
 
 strong {
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-heavy);
 }
 
 ul,

@@ -22,12 +22,14 @@
 	}
 	&__image {
 		text-align: center;
+		margin-left: auto;
 		img {
 			margin: 0 auto;
 		}
 	}
 	&__form {
-		margin-top: var(--spacing);
+		margin-top: var(--spacing-xs);
+		margin-bottom: var(--spacing-xs);
 		form {
 			margin-bottom: var(--spacing-s);
 		}

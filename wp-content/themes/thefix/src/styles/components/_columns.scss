@@ -1,0 +1,16 @@
+.wp-block-columns.styled{
+	display: flex;
+	margin-bottom: 1rem !important;
+	.wp-block-column {
+		background-color: var(--color-tertiary);
+		padding: var(--spacing-xs);
+		margin: 0 calc(var(--spacing-xs) / 2);
+		border-radius: var(--border-radius);
+		h1,h2,h3,h4,h5 {
+			margin-bottom: var(--spacing-xs);
+		}
+		img {
+			margin-top: var(--spacing-xs);
+		}
+	}
+}

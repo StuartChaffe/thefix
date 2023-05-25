@@ -125,7 +125,7 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 }
 .has-primary-color {
-	color: var(--color-primary);
+	color: var(--color-primary) !important;
 }
 .bkg {
 	&--white {
@@ -139,6 +139,13 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 	&--purple {
 		background-color: var(--color-primary);
+	}
+}
+.bkg--purple {
+	.bkg--white {
+		h1, h2, h3, h4, h5, h6, p {
+			color: var(--color-text-base);
+		}
 	}
 }
 .content-block.bkg,

@@ -4,6 +4,7 @@
 	justify-content: space-between;
 	margin-bottom: 1rem;
 	border-radius: var(--border-radius);
+	padding: 0;
 	@include mq(medium) {
 		flex-direction: column;
 	}
@@ -28,14 +29,18 @@
 	}
 
 	&--pad {
+		padding: 0 var(--spacing-s);
 		padding: var(--spacing-xs) var(--spacing-s);
 		@include mq(medium) {
-			padding: var(--spacing) var(--spacing-l);
+			// padding: var(--spacing) var(--spacing-l);
+			padding: 0 var(--spacing-l);
 		}
 	}
 
 	&__inner {
 		border-radius: var(--border-radius);
+		// max-width: 690px;
+    	// margin: 0 auto;
 
 		p + .wp-block-heading,
 		p + h1,
@@ -51,6 +56,20 @@
 			li {
 				margin-bottom: 1rem;
 			}
+		}
+	}
+
+	+ .content-block {
+		// margin-top: var(--spacing);
+	}
+}
+
+.content-block > .content-block {
+	padding: 0;
+	&__inner {
+		padding: var(--spacing-xs) var(--spacing-s);
+		@include mq(medium) {
+			padding: var(--spacing) var(--spacing-l);
 		}
 	}
 }

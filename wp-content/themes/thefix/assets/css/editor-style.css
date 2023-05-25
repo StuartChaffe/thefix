@@ -274,6 +274,11 @@ p.lead {
   line-height: var(--line-height-headings);
 }
 
+.has-large-font-size {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-headings);
+}
+
 p.small, p.card__excerpt, p.card__date,
 .small p,
 .card__excerpt p,
@@ -282,7 +287,7 @@ p.small, p.card__excerpt, p.card__date,
 }
 
 strong {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heavy);
 }
 
 ul,
@@ -858,6 +863,7 @@ div[data-type="core/button"] div[data-block] {
   justify-content: space-between;
   margin-bottom: 1rem;
   border-radius: var(--border-radius);
+  padding: 0;
 }
 @media (min-width: 50em) {
   .content-block {
@@ -882,11 +888,12 @@ div[data-type="core/button"] div[data-block] {
   }
 }
 .content-block--pad {
+  padding: 0 var(--spacing-s);
   padding: var(--spacing-xs) var(--spacing-s);
 }
 @media (min-width: 50em) {
   .content-block--pad {
-    padding: var(--spacing) var(--spacing-l);
+    padding: 0 var(--spacing-l);
   }
 }
 .content-block__inner {
@@ -905,6 +912,17 @@ div[data-type="core/button"] div[data-block] {
 }
 .content-block__inner ul li {
   margin-bottom: 1rem;
+}
+.content-block > .content-block {
+  padding: 0;
+}
+.content-block > .content-block__inner {
+  padding: var(--spacing-xs) var(--spacing-s);
+}
+@media (min-width: 50em) {
+  .content-block > .content-block__inner {
+    padding: var(--spacing) var(--spacing-l);
+  }
 }
 
 .cta {
@@ -934,12 +952,14 @@ div[data-type="core/button"] div[data-block] {
 }
 .cta__image {
   text-align: center;
+  margin-left: auto;
 }
 .cta__image img {
   margin: 0 auto;
 }
 .cta__form {
-  margin-top: var(--spacing);
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
 }
 .cta__form form {
   margin-bottom: var(--spacing-s);
@@ -1279,7 +1299,7 @@ img.aligncenter {
 }
 
 .has-primary-color {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 
 .bkg--white {
@@ -1293,4 +1313,8 @@ img.aligncenter {
 }
 .bkg--purple {
   background-color: var(--color-primary);
+}
+
+.bkg--purple .bkg--white h1, .bkg--purple .bkg--white h2, .bkg--purple .bkg--white h3, .bkg--purple .bkg--white h4, .bkg--purple .bkg--white h5, .bkg--purple .bkg--white h6, .bkg--purple .bkg--white p {
+  color: var(--color-text-base);
 }
