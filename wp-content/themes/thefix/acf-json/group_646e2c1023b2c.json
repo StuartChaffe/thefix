@@ -69,10 +69,10 @@
         },
         {
             "key": "field_646e2c4628bd2",
-            "label": "Video TBC",
+            "label": "Video link",
             "name": "video",
             "aria-label": "",
-            "type": "text",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -81,11 +81,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "array"
         }
     ],
     "location": [
@@ -106,5 +102,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684942416
+    "modified": 1685012618
 }

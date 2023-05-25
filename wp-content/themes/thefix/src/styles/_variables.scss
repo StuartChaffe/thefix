@@ -29,8 +29,8 @@
 	--color-tertiary: #F0F0E4;
 	--color-quaternary: #E2574C;
 
-	--color-text-base: #000;
-	--color-text-dark: var(--color-secondary);
+	--color-text-base: var(--color-secondary);
+	--color-text-dark: #000;
 	--color-text-reversed: #fff;
 	--color-text-link: var(--color-primary);
 	--color-text-hover: var(--color-secondary);

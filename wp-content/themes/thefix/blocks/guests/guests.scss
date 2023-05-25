@@ -1,66 +1,36 @@
 .guests {
-	display: flex;
-	flex-direction: column;
-	margin: var(--spacing-s) -8px;
+	column-count: 1;
+	margin: var(--spacing) 0;
 	@include mq(medium) {
-		flex-direction: row;
+		column-count: 2;
+		column-gap: var(--spacing-xs);
 	}
 	&-item {
 		display: flex;
 		flex-direction: column;
-		flex: 1 1 0px;
-		margin: 0 calc(var(--spacing-xs) / 2) var(--spacing-s) calc(var(--spacing-xs) / 2);
-		align-items: center;
-		padding-bottom: var(--spacing-s);
+		align-items: flex-start;
+		page-break-inside: avoid;
+		margin-bottom: var(--spacing-xs);
+		padding: var(--spacing-xs);
+		border-radius: var(--border-radius);
 		@include mq(medium) {
-			margin: 0 calc(var(--spacing-xs) / 2);
+			// width: 50%;
+			// margin: 0 calc(var(--spacing-xs) / 2);
 		}
-		.card__media {
-			position: relative;
+
+		&__image {
+			height: 115px;
+			width: 115px;
 			overflow: hidden;
-			width: 100%;
-			// display: none;
-			// height: calc(var(--container) / 3);
-			aspect-ratio: 3 / 2;
-			// max-height: calc(var- / 3);
-			background-color: var(--color-tertiary);
-			background-size: cover;
-			background-position: center center;
-			img {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				// max-width: 100%;
-				// min-width: calc(100% + 2px);
-				min-height: calc(100% + 2px);
-				// display: block;
-				display: none;
-				// width: 100%;
-			}
+			border-radius: 130px;
+			margin-bottom: var(--spacing-xs);
 		}
-		&__logo {
-			margin-bottom: var(--spacing-s);
-			height: 50px;
-			width: 60%;
-		}
-		&__content {
-			align-items: baseline;
-			display: flex;
-			flex-direction: column;
-			padding: var(--spacing-s);
-			padding-bottom: 0;
-			color: white;
-			// height: 100%;
-			p {
-				font-size: var(--font-size-small);
-				&:last-of-type {
-					margin-bottom: var(--spacing-s);
-				}
-			}
+
+		.lead {
+			margin-bottom: 0;
 		}
 		.btn {
-			margin: auto auto 0 auto;
+			margin-top: var(--spacing-xs);
 		}
 	}
 }
