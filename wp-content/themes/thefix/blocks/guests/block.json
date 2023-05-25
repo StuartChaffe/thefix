@@ -2,7 +2,7 @@
 	"name": "acf/guests",
 	"title": "All guest speakers",
 	"description": "Display all guest speakers",
-	"category": "transatlantic",
+	"category": "thefix",
 	"icon": "media-default",
 	"keywords": ["guest"],
 	"acf": {

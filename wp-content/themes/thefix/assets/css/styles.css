@@ -3208,6 +3208,12 @@ input[type=button]:focus {
   color: var(--color-primary);
 }
 
+.sb_youtube {
+  padding: calc(1rem - 10px) !important;
+  margin-bottom: var(--spacing) !important;
+  max-width: var(--container);
+}
+
 .card {
   display: flex;
   flex-direction: column;
