@@ -6,6 +6,7 @@
             "key": "field_6210d741bb525",
             "label": "Analytics",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -22,6 +23,7 @@
             "key": "field_6210d764bb527",
             "label": "Enable for logged in users?",
             "name": "analytics_enabled_logged_in",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "You almost definitely want to stop analytics from registering if logged in, so best to leave this box unchecked unless you have something specific you want to test.",
             "required": 0,
@@ -41,6 +43,7 @@
             "key": "field_6210d79abb528",
             "label": "Analytics embed code",
             "name": "analytics_embed_code",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -60,6 +63,7 @@
             "key": "field_607b050b81cae",
             "label": "Global Alert",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -76,6 +80,7 @@
             "key": "field_5e7cef9143a37",
             "label": "Show global alert?",
             "name": "alert",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -95,6 +100,7 @@
             "key": "field_5e7ceeea145d2",
             "label": "Global alert text",
             "name": "alert_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -122,6 +128,7 @@
             "key": "field_607b051881caf",
             "label": "Cookie Notice",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -138,6 +145,7 @@
             "key": "field_607b07d081cb2",
             "label": "Show cookie alert?",
             "name": "cookie",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -157,6 +165,7 @@
             "key": "field_607b07cf81cb1",
             "label": "Cookie alert text",
             "name": "cookie_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -184,6 +193,7 @@
             "key": "field_6210d0db3f493",
             "label": "Unsupported Browser",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -200,6 +210,7 @@
             "key": "field_6210d0ed3f494",
             "label": "Unsupported browser notice text",
             "name": "unsupported_browser_notice_text",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -214,6 +225,39 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_64708b58b7db1",
+            "label": "Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64708b0042816",
+            "label": "Back to posts button",
+            "name": "posts_back",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -234,5 +278,5 @@
     "active": true,
     "description": "Set theme options",
     "show_in_rest": 0,
-    "modified": 1645271088
+    "modified": 1685097316
 }

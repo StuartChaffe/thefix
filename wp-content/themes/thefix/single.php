@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$button = get_field('posts_back', 'options');
+?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="content">
@@ -9,8 +11,7 @@
 				<div class="card__title"><h1 class="heading-3"><?php the_title(); ?></h1></div>
 				<?php the_content(); ?>
 			</div>
-
-			<a href="/blog" class="btn">Back to all posts</a>
+			<?php if($button) { ?><a href="<?php echo $button['url'];?>" class="btn"><?php echo $button['title'];?></a><?php } ?>
 		</div>
 	</article>
 <?php endwhile; ?>
