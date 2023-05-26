@@ -1,7 +1,28 @@
 {
     "key": "group_6454e8dc41f33",
     "title": "Featured news",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_647089f32b747",
+            "label": "Content",
+            "name": "content",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
     "location": [
         [
             {
@@ -20,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683286251
+    "modified": 1685096967
 }

@@ -1,4 +1,5 @@
 <?php
+	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/buttons', 'core/image', 'core/list', 'core/separator', 'core/gallery', 'core/embed', 'core/spacer', 'acf/banner', 'acf/featured-programmes', 'acf/pagelinks', 'acf/content',);
 	$featured = new WP_Query( array(
 		'post_type' => 'post',
 		'posts_per_page' => 1,
@@ -13,7 +14,9 @@
 <?php if ($featured->have_posts()) { ?>
 <div class="news__featured bkg--purple">
 	<div class="container txt--white">
-		<h1>Latest Blog Post</h1>
+		<?php if($allowed_blocks) { ?>
+			<?php echo '<InnerBlocks allowedBlocks="' . esc_attr( wp_json_encode( $allowed_blocks ) ) . '" />'; ?>
+		<?php } ?>
 		<?php while($featured->have_posts()) : $featured->the_post(); ?>
 		<div class="card bkg--white txt--black">
 			<span class="card__hole bkg--purple">&nbsp;</span>
