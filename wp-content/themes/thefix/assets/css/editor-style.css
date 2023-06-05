@@ -1311,6 +1311,9 @@ img.aligncenter {
 .bkg--dark-grey {
   background-color: var(--color-secondary);
 }
+.bkg--dark-grey h1, .bkg--dark-grey h2, .bkg--dark-grey h3, .bkg--dark-grey h4, .bkg--dark-grey h5, .bkg--dark-grey h6, .bkg--dark-grey p {
+  color: white;
+}
 .bkg--purple {
   background-color: var(--color-primary);
 }
