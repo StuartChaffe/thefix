@@ -136,6 +136,9 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 	&--dark-grey {
 		background-color: var(--color-secondary);
+		h1, h2, h3, h4, h5, h6, p {
+			color: white;
+		}
 	}
 	&--purple {
 		background-color: var(--color-primary);
