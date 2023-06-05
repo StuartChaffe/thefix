@@ -129,7 +129,7 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 }
 .bkg {
 	&--white {
-		background-color: white;
+		background-color: white !important;
 	}
 	&--grey {
 		background-color: var(--color-tertiary);

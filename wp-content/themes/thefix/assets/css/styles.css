@@ -4227,7 +4227,7 @@ img.aligncenter {
 }
 
 .bkg--white {
-  background-color: white;
+  background-color: white !important;
 }
 .bkg--grey, .bkg--grey + .site-footer__outer {
   background-color: var(--color-tertiary);

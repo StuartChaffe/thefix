@@ -1303,7 +1303,7 @@ img.aligncenter {
 }
 
 .bkg--white {
-  background-color: white;
+  background-color: white !important;
 }
 .bkg--grey {
   background-color: var(--color-tertiary);
