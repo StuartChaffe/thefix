@@ -1303,7 +1303,7 @@ img.aligncenter {
 }
 
 .bkg--white {
-  background-color: white !important;
+  background-color: white;
 }
 .bkg--grey {
   background-color: var(--color-tertiary);
@@ -1312,7 +1312,7 @@ img.aligncenter {
   background-color: var(--color-secondary);
 }
 .bkg--dark-grey h1, .bkg--dark-grey h2, .bkg--dark-grey h3, .bkg--dark-grey h4, .bkg--dark-grey h5, .bkg--dark-grey h6, .bkg--dark-grey p {
-  color: white;
+  color: white !important;
 }
 .bkg--purple {
   background-color: var(--color-primary);

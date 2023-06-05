@@ -4227,7 +4227,7 @@ img.aligncenter {
 }
 
 .bkg--white {
-  background-color: white !important;
+  background-color: white;
 }
 .bkg--grey, .bkg--grey + .site-footer__outer {
   background-color: var(--color-tertiary);
@@ -4236,7 +4236,7 @@ img.aligncenter {
   background-color: var(--color-secondary);
 }
 .bkg--dark-grey h1, .bkg--dark-grey + .site-footer__outer h1, .bkg--dark-grey h2, .bkg--dark-grey + .site-footer__outer h2, .bkg--dark-grey h3, .bkg--dark-grey + .site-footer__outer h3, .bkg--dark-grey h4, .bkg--dark-grey + .site-footer__outer h4, .bkg--dark-grey h5, .bkg--dark-grey + .site-footer__outer h5, .bkg--dark-grey h6, .bkg--dark-grey + .site-footer__outer h6, .bkg--dark-grey p, .bkg--dark-grey + .site-footer__outer p {
-  color: white;
+  color: white !important;
 }
 .bkg--purple, .bkg--purple + .site-footer__outer {
   background-color: var(--color-primary);
