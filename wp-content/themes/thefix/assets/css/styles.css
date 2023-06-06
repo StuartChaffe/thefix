@@ -3452,6 +3452,10 @@ input[type=button]:focus {
   text-decoration: none;
 }
 
+.site-header__nav li:last-of-type.current-menu-item a {
+  color: white;
+}
+
 .site-header__nav li a {
   font-size: 16px;
   color: var(--color-text-base);
@@ -3872,7 +3876,6 @@ body.nav-open {
 .cta__form-outer {
   width: 100%;
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
 }
 @media (min-width: 50em) {
@@ -3883,6 +3886,8 @@ body.nav-open {
 .cta__image {
   text-align: center;
   margin-left: auto;
+  margin-top: auto;
+  display: flex;
 }
 .cta__image img {
   margin: 0 auto;
