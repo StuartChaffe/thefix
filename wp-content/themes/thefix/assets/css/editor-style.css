@@ -873,6 +873,9 @@ div[data-type="core/button"] div[data-block] {
 .content-block a {
   text-decoration: underline;
 }
+.content-block iframe {
+  max-width: 100%;
+}
 .content-block .wp-block-image,
 .content-block h2, .content-block h3, .content-block h4 {
   margin-bottom: var(--spacing-s);
@@ -943,6 +946,7 @@ div[data-type="core/button"] div[data-block] {
 .cta__form-outer {
   width: 100%;
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 @media (min-width: 50em) {

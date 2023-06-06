@@ -48,9 +48,15 @@
 	}
 }
 
+
 .site-header__nav li a {
 	font-size: 16px;
 	color: var(--color-text-base);
+}
+.site-header__nav li.current-menu-item {
+	a {
+		color: var(--color-primary);
+	}
 }
 
 .site-header__menu-btn {

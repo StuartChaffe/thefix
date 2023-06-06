@@ -3211,7 +3211,6 @@ input[type=button]:focus {
 .sb_youtube {
   padding: calc(1rem - 10px) !important;
   margin-bottom: var(--spacing) !important;
-  max-width: var(--container);
 }
 
 .card {
@@ -3433,6 +3432,10 @@ input[type=button]:focus {
 .site-header__nav li a {
   font-size: 16px;
   color: var(--color-text-base);
+}
+
+.site-header__nav li.current-menu-item a {
+  color: var(--color-primary);
 }
 
 .site-header__menu-btn {
@@ -3773,6 +3776,9 @@ body.nav-open {
 .content-block a {
   text-decoration: underline;
 }
+.content-block iframe {
+  max-width: 100%;
+}
 .content-block .wp-block-image,
 .content-block h2, .content-block h3, .content-block h4 {
   margin-bottom: var(--spacing-s);
@@ -3843,6 +3849,7 @@ body.nav-open {
 .cta__form-outer {
   width: 100%;
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 @media (min-width: 50em) {
