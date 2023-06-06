@@ -3214,6 +3214,22 @@ input[type=button]:focus {
   padding: calc(1rem - 10px) !important;
   margin-bottom: var(--spacing) !important;
 }
+@media (max-width: 49.99em) {
+  .sb_youtube .sby_items_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .sb_youtube .sby_items_wrap .sby_item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 49.99em) {
+  [id^=sb_youtube_].sb_youtube.sby_col_3 .sby_items_wrap .sby_item {
+    width: 100% !important;
+  }
+}
 
 .card {
   display: flex;
@@ -3844,7 +3860,7 @@ body.nav-open {
   justify-content: space-between;
   border-radius: var(--border-radius);
   padding-top: var(--spacing-s);
-  margin: 0 2rem 1rem 2rem;
+  margin: 0 1rem 1rem 1rem;
 }
 @media (min-width: 50em) {
   .cta {

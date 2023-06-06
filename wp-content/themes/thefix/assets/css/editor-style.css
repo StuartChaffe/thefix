@@ -941,7 +941,7 @@ div[data-type="core/button"] div[data-block] {
   justify-content: space-between;
   border-radius: var(--border-radius);
   padding-top: var(--spacing-s);
-  margin: 0 2rem 1rem 2rem;
+  margin: 0 1rem 1rem 1rem;
 }
 @media (min-width: 50em) {
   .cta {

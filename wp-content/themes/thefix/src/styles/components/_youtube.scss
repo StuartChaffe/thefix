@@ -1,5 +1,20 @@
 .sb_youtube {
-    padding: calc(1rem - 10px) !important;
-    margin-bottom: var(--spacing) !important;
-    // max-width: var(--container);
+	padding: calc(1rem - 10px) !important;
+	margin-bottom: var(--spacing) !important;
+	// max-width: var(--container);
+	.sby_items_wrap {
+		@include mq($until: medium) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			.sby_item {
+				width: 100%;
+			}
+		}
+	}
+}
+[id^=sb_youtube_].sb_youtube.sby_col_3 .sby_items_wrap .sby_item {
+	@include mq($until: medium) { 
+		width:100% !important;
+	}
 }
