@@ -23,7 +23,7 @@
 			<p class="lead"><strong><?php the_title(); ?></strong></p>
 			<?php if($subtitle) { ?><p class="lead"><?php echo $subtitle; ?></p><?php } ?>
 			<?php if($desc) { ?><p></p><?php echo $desc; ?></p><?php } ?>
-			<?php if($link) { ?><a href="<?php echo $link['url'];?>" class="btn btn--primary"><?php echo $link['title'];?></a><?php } ?>
+			<?php if($link) { ?><a href="<?php echo $link['url'];?>" target="<?php echo $link['target'];?>" class="btn btn--primary"><?php echo $link['title'];?></a><?php } ?>
 		</div>
 	<?php endwhile; wp_reset_query(); ?>
 	</div>

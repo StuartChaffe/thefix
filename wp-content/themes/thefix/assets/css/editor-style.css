@@ -318,11 +318,13 @@ blockquote {
 a {
   color: var(--color-text-link);
   text-decoration: none;
+  word-break: break-word;
 }
 
 a:hover {
-  color: var(--color-text-hover);
+  color: var(--color-text-link);
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 h1,
@@ -517,7 +519,7 @@ div[data-type="core/button"] div[data-block] {
 
 .container, .main {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   width: 100%;
   max-width: var(--container);
 }
@@ -546,7 +548,7 @@ div[data-type="core/button"] div[data-block] {
 .wp-block-columns,
 .global-container > p {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   max-width: var(--container);
   width: 100%;
 }
@@ -588,9 +590,14 @@ div[data-type="core/button"] div[data-block] {
   background-color: white;
   position: relative;
   border-radius: var(--border-radius);
-  padding: var(--spacing-s) var(--spacing-l);
+  padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) var(--spacing);
   margin-bottom: var(--spacing-xs);
   border: 0;
+}
+@media (min-width: 50em) {
+  .card {
+    padding: var(--spacing-s) var(--spacing-l);
+  }
 }
 .card h1 {
   margin-bottom: var(--spacing);
@@ -883,7 +890,7 @@ div[data-type="core/button"] div[data-block] {
 .content-block--full {
   padding-top: var(--spacing);
   padding-bottom: var(--spacing);
-  margin: 0 2rem 1rem 2rem;
+  margin: 0 0rem 1rem 0rem;
 }
 @media (min-width: 50em) {
   .content-block--full {
@@ -1045,7 +1052,12 @@ div[data-type="core/button"] div[data-block] {
   }
 }
 .news__featured a.card {
-  padding: var(--spacing) var(--spacing-l);
+  padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) var(--spacing);
+}
+@media (min-width: 50em) {
+  .news__featured a.card {
+    padding: var(--spacing) var(--spacing-l);
+  }
 }
 .news__featured a.card:hover {
   text-decoration: none;
@@ -1235,6 +1247,9 @@ img.aligncenter {
 }
 .body--purple {
   background-color: var(--color-primary);
+}
+.body--purple .hamburger-inner, .body--purple .hamburger-inner::before, .body--purple .hamburger-inner::after {
+  background-color: white !important;
 }
 .body--purple .site-header__nav li:last-of-type a {
   background-color: white;

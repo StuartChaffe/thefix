@@ -6,9 +6,12 @@
 	background-color: white;
 	position: relative;
 	border-radius: var(--border-radius);
-	padding: var(--spacing-s) var(--spacing-l);
+	padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) var(--spacing);
 	margin-bottom: var(--spacing-xs);
 	border: 0;
+	@include mq(medium) {
+		padding: var(--spacing-s) var(--spacing-l);
+	}
 
 	h1 {
 		margin-bottom: var(--spacing);

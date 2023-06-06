@@ -19,7 +19,10 @@
 			}
 		}
 		a.card {
-			padding: var(--spacing) var(--spacing-l);
+			padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) var(--spacing);
+			@include mq(medium) {
+				padding: var(--spacing) var(--spacing-l);
+			}
 			&:hover {
 				text-decoration: none;
 				.btn {

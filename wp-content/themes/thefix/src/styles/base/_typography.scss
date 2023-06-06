@@ -53,11 +53,13 @@ blockquote {
 a {
 	color: var(--color-text-link);
 	text-decoration: none;
+	word-break: break-word;
 }
 
 a:hover {
-	color: var(--color-text-hover);
+	color: var(--color-text-link);
 	text-decoration: underline;
+	opacity: 0.8;
 }
 
 h1,

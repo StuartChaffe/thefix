@@ -84,6 +84,14 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	}
 	&--purple {
 		background-color: var(--color-primary);
+		.hamburger-inner {
+			&,
+			&::before,
+			&::after {
+				background-color: white !important;
+
+			}
+		}
 		.site-header__nav li {
 			&:last-of-type {
 				a {
