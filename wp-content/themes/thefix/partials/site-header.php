@@ -5,7 +5,7 @@
 		$bkg = get_field('bkg_colour');
 	?>
 		<h1 class="site-header__logo"><a href="<?php echo home_url(); ?>">
-		<?php if($bkg == 'body--purple') { ?><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-white.png" alt="The Fix logo" />
+		<?php if($bkg == 'body--purple' || is_single()) { ?><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-white.png" alt="The Fix logo" />
 		<?php } else { ?><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.png" alt="The Fix logo" />
 		<?php } ?>
 		</a></h1>

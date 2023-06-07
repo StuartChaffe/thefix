@@ -19,9 +19,9 @@
 <a id="skip-nav" class="skip-nav screen-reader-text" href="#content">Skip to main content</a>
 <?php
 	$bkg = get_field('bkg_colour');
-	$header = get_field('show_header');
+	$header = get_field('hide_header');
 ?>
 <div class="global-container <?php echo $bkg; ?><?php if ( 'post' == get_post_type() ) { ?> body--purple<?php } ?>">
 
 <?php get_template_part('partials/global', 'alert'); ?>
-<?php if($header == 'True') { ?><?php get_template_part('partials/site', 'header'); ?><?php } ?>
+<?php if($header !== '1') { ?><?php get_template_part('partials/site', 'header'); ?><?php } ?>

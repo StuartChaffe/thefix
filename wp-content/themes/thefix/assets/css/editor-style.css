@@ -324,7 +324,6 @@ a {
 a:hover {
   color: var(--color-text-link);
   text-decoration: underline;
-  opacity: 0.8;
 }
 
 h1,

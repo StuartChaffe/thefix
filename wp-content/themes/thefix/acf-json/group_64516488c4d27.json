@@ -32,8 +32,8 @@
         },
         {
             "key": "field_647f4e17775ff",
-            "label": "Show header?",
-            "name": "show_header",
+            "label": "Hide header?",
+            "name": "hide_header",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -45,10 +45,10 @@
                 "id": ""
             },
             "message": "",
-            "default_value": 1,
-            "ui": 0,
+            "default_value": 0,
             "ui_on_text": "",
-            "ui_off_text": ""
+            "ui_off_text": "",
+            "ui": 1
         }
     ],
     "location": [
@@ -84,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686064686
+    "modified": 1686128695
 }
