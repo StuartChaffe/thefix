@@ -24,6 +24,10 @@
 			overflow: hidden;
 			border-radius: 130px;
 			margin-bottom: var(--spacing-xs);
+			img {
+				width: 100%;
+				height: 100%;
+			}
 		}
 
 		.lead {

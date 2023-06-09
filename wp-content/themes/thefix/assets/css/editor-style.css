@@ -1023,6 +1023,10 @@ div[data-type="core/button"] div[data-block] {
   border-radius: 130px;
   margin-bottom: var(--spacing-xs);
 }
+.guests-item__image img {
+  width: 100%;
+  height: 100%;
+}
 .guests-item .lead {
   margin-bottom: 0;
 }
