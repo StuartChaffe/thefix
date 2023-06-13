@@ -247,10 +247,8 @@ select {
   *,
   *::before,
   *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -2940,6 +2938,119 @@ table tr:nth-child(even) {
 
 table tbody tr:hover {
   background: var(--color-grey);
+}
+
+.yikes-easy-mc-form .yikes-easy-mc-submit-button {
+  display: block;
+  padding: 0.4rem 0.6rem !important;
+  margin: 0;
+  margin-top: 0 !important;
+  min-height: 42px !important;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  transition: all 0.2s linear;
+  border: 0;
+  font-size: var(--font-size-small);
+  width: 100%;
+}
+
+.yikes-easy-mc-form label {
+  margin: 0;
+  margin-bottom: 0 !important;
+}
+.yikes-easy-mc-form label span:first-child {
+  display: none;
+}
+.yikes-easy-mc-form label input[type=email],
+.yikes-easy-mc-form label input[type=number],
+.yikes-easy-mc-form label input[type=search],
+.yikes-easy-mc-form label input[type=text],
+.yikes-easy-mc-form label input[type=tel],
+.yikes-easy-mc-form label input[type=url],
+.yikes-easy-mc-form label input[type=password],
+.yikes-easy-mc-form label textarea,
+.yikes-easy-mc-form label select {
+  background-color: white;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: var(--font-size-small);
+  width: 100%;
+  font-weight: var(--font-weight-normal);
+}
+.yikes-easy-mc-form label input[type=submit], .yikes-easy-mc-form label input[type=reset], .yikes-easy-mc-form label input[type=button] {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  margin: 0;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  transition: all 0.2s linear;
+  border: 0;
+  font-size: var(--font-size-small);
+  width: 100%;
+}
+.yikes-easy-mc-form label input[type=email],
+.yikes-easy-mc-form label input[type=number],
+.yikes-easy-mc-form label input[type=search],
+.yikes-easy-mc-form label input[type=text],
+.yikes-easy-mc-form label input[type=tel],
+.yikes-easy-mc-form label input[type=url],
+.yikes-easy-mc-form label input[type=password],
+.yikes-easy-mc-form label textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.yikes-easy-mc-form label textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.yikes-easy-mc-form label input[type=email]:focus,
+.yikes-easy-mc-form label input[type=number]:focus,
+.yikes-easy-mc-form label input[type=search]:focus,
+.yikes-easy-mc-form label input[type=text]:focus,
+.yikes-easy-mc-form label input[type=tel]:focus,
+.yikes-easy-mc-form label input[type=url]:focus,
+.yikes-easy-mc-form label input[type=password]:focus,
+.yikes-easy-mc-form label textarea:focus,
+.yikes-easy-mc-form label select:focus {
+  border: 0;
+  outline: 0;
+}
+.yikes-easy-mc-form label label {
+  display: block;
+  margin: 0.5em 0;
+  font-weight: 600;
+}
+.yikes-easy-mc-form label input[type=checkbox],
+.yikes-easy-mc-form label input[type=radio] {
+  display: inline;
+}
+.yikes-easy-mc-form label input[type=submit].center,
+.yikes-easy-mc-form label input[type=reset].center,
+.yikes-easy-mc-form label input[type=button].center {
+  margin: 0 auto;
+}
+.yikes-easy-mc-form label input[type=submit]:hover,
+.yikes-easy-mc-form label input[type=reset]:hover,
+.yikes-easy-mc-form label input[type=button]:hover,
+.yikes-easy-mc-form label input[type=submit]:focus,
+.yikes-easy-mc-form label input[type=reset]:focus,
+.yikes-easy-mc-form label input[type=button]:focus {
+  background: white;
+  text-decoration: none;
+  color: var(--color-text-base);
+}
+.yikes-easy-mc-form label .required {
+  color: #BF5D58;
+}
+.yikes-easy-mc-form label .mc-field-group label {
+  display: none;
 }
 
 input[type=email],

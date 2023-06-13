@@ -1,5 +1,6 @@
 <?php
 	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/buttons', 'core/image', 'core/list', 'core/separator', 'core/gallery', 'core/embed', 'core/spacer', 'acf/banner', 'acf/featured-programmes', 'acf/pagelinks', 'acf/content',);
+	$button = get_field('posts_back', 'options');
 	$featured = new WP_Query( array(
 		'post_type' => 'post',
 		'posts_per_page' => 1,
@@ -27,7 +28,7 @@
 
 			<div class="btn--group">
 				<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="btn btn--primary">Read this post</a>
-				<a href="/blog" class="btn">See all posts</a>
+				<a href="<?php echo $button['url'];?>" class="btn">See all posts</a>
 			</div>
 		</div>
 		<?php endwhile; wp_reset_query(); ?>
