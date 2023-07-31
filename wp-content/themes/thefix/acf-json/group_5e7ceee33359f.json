@@ -258,6 +258,27 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_64c77600d0cb0",
+            "label": "Privacy link",
+            "name": "privacy",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "post_status": "",
+            "taxonomy": "",
+            "allow_archives": 0,
+            "multiple": 0,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -278,5 +299,5 @@
     "active": true,
     "description": "Set theme options",
     "show_in_rest": 0,
-    "modified": 1685097316
+    "modified": 1690793496
 }

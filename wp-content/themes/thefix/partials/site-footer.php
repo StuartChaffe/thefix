@@ -27,9 +27,9 @@
 		<?php endif; ?>
 		</ul>
 		<?php
-			$privacy = get_field('privacy', 'option');
+			$privacy = get_field('privacy', 'options');
 		?>
-		<div class="site-footer__meta">The Fix | Copyright <?php echo date("Y"); ?> | <?php if($privacy):?><a href="<?php echo $privacy['url']; ?>">Privacy</a><?php endif; ?></div>
+		<div class="site-footer__meta">The Fix | Copyright <?php echo date("Y"); ?> | <?php if($privacy):?><a href="<?php echo $privacy; ?>">Privacy</a><?php endif; ?></div>
 	</div>
 </footer>
 </div>
