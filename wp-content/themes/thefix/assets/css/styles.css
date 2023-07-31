@@ -3620,6 +3620,14 @@ input[type=button]:focus {
   margin-bottom: var(--spacing-s);
 }
 
+.site-footer__meta {
+  font-size: 14px;
+  color: white;
+}
+.site-footer__meta a {
+  color: white;
+}
+
 .site-footer__nav ul {
   margin: 0;
   padding-left: 0;

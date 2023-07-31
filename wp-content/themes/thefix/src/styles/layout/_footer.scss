@@ -21,7 +21,13 @@
 		margin-bottom: var(--spacing-s);
 	}
 }
-
+.site-footer__meta {
+	font-size: 14px;
+	color: white;
+	a {
+		color: white;
+	}
+}
 .site-footer__nav {
 	ul {
 		margin: 0;

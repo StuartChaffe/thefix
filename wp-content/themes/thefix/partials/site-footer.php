@@ -25,13 +25,11 @@
 		<?php if(get_field('patreon', 'options')): ?>
 			<li class="social-links__item"><a href="<?php the_field('patreon', 'options'); ?>" class="social-links__link"><?php echo get_icon('patreon'); ?></a></li>
 		<?php endif; ?>
+		</ul>
 		<?php
 			$privacy = get_field('privacy', 'option');
 		?>
-		<?php if($privacy):?>
-			<li class="social-links__item"><a href="<?php echo $privacy['url']; ?>" class="social-links__link"><?php echo get_icon('privacy'); ?></a></li>
-		<?php endif; ?>
-		</ul>
+		<div class="site-footer__meta">The Fix | Copyright <?php echo date("Y"); ?> | <?php if($privacy):?><a href="<?php echo $privacy['url']; ?>">Privacy</a><?php endif; ?></div>
 	</div>
 </footer>
 </div>
