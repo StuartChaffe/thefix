@@ -20,7 +20,9 @@
                 "bkg--white": "None",
                 "bkg--grey": "Grey",
                 "bkg--dark-grey": "Dark Grey",
-                "bkg--purple": "Purple"
+                "bkg--purple": "Purple",
+                "bkg--aqua": "Aqua",
+                "bkg--pink": "Pink"
             },
             "default_value": false,
             "return_format": "value",
@@ -114,5 +116,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1684939389
+    "modified": 1729761247
 }

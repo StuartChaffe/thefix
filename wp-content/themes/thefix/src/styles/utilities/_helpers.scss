@@ -82,6 +82,12 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 			color: white;
 		}
 	}
+	&--aqua {
+		background-color: var(--color-aqua);
+	}
+	&--pink {
+		background-color: var(--color-pink);
+	}
 	&--purple {
 		background-color: var(--color-primary);
 		.hamburger-inner {
@@ -147,6 +153,12 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 		h1, h2, h3, h4, h5, h6, p {
 			color: white !important;
 		}
+	}
+	&--aqua {
+		background-color: var(--color-aqua);
+	}
+	&--pink {
+		background-color: var(--color-pink);
 	}
 	&--purple {
 		background-color: var(--color-primary);

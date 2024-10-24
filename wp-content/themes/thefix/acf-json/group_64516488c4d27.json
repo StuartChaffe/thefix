@@ -20,7 +20,9 @@
                 "body--white": "White",
                 "body--grey": "Grey",
                 "body--dark-grey": "Dark grey",
-                "body--purple": "Purple"
+                "body--purple": "Purple",
+                "body--aqua": "Aqua",
+                "body--pink": "Pink"
             },
             "default_value": false,
             "return_format": "value",
@@ -104,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686230072
+    "modified": 1729761307
 }
